@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+<!-- CSS STARTS HERE--------------------------------------------------------------------- -->
+    <style>
+
+.container{
+    min-width: 100px;
+    min-height: 100px;
+    /* height: 100vh;
+    width: 100vw;
+    background-size: cover; */
+    background: linear-gradient(#fada70, #c471f5);
+    padding: 20px;
+}
+
+form {
+    font-family: 'Karla', sans-serif;
+    /* vertical-align: center;
+    text-align: center; */
+    font-size: 20px;
+    color: rgb(66, 66, 66);
+}
+
+h1{
+    font-family: 'Karla', sans-serif;
+    color: rgb(0, 117, 117);
+}
+
+h3{
+    font-family: 'Karla', sans-serif;
+    color: rgb(66, 66, 66);
+}
+
+form input{
+    display: block;
+    /* position: relative;
+     */
+    margin-bottom: 20px;
+}
+
+
+    </style>
+<!-- HTML STARTS HERE-------------------------------------------------------------------- -->
+</head>
+<body>
+
+
+
+<div class='container'>
+    <h1>Survey</h1>
+    <h3>Fill out this survey because Speros won't let you continue if he don't get this. This is very important to him.</h3>
+        <form action='/survey' method='POST'>
+        Name: <input type='text' name='name'>
+        Location: <input type='text' name='location'>
+        Favorite Language: 
+            <select name='language'>
+                <option value='Python'>Python</option>
+                <option value='JS'>JS</option>
+                <option value='C'>C</option>
+                <option value='Java'>Java</option>
+            </select>
+        <input type='submit' value='boomdiggity'>    
+    </form>
+</div>
+
+
+
+
+</body>
+</html>
